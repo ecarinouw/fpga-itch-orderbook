@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Simulation
+sim_build/
+results.xml
+*.vcd
+*.fst
+
+# Vivado
+.Xil/
+*.jou
+*.log
+*.str
+vivado_*.backup.*
+*.cache/
+*.runs/
+*.hw/
+*.ip_user_files/
+*.sim/
+
+# Market data (large, not redistributable)
+data/
+*.NASDAQ_ITCH50*
+*.gz
+
+# OS
+.DS_Store
