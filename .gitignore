@@ -22,7 +22,8 @@ vivado_*.backup.*
 *.ip_user_files/
 *.sim/
 
-# Market data (large, not redistributable)
+# Market data and Nasdaq specs (large or not redistributable)
+docs/specs/
 data/
 *.NASDAQ_ITCH50*
 *.gz

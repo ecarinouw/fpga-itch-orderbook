@@ -84,6 +84,13 @@ Download them into `data/` (ignored by git) and read them compressed; there is n
 python scripts/itch_stats.py data/12302019.NASDAQ_ITCH50.gz
 ```
 
+## Specifications
+
+The design follows two Nasdaq specifications. They are not included in the repository; download them into `docs/specs/` (ignored by git):
+
+- [Nasdaq TotalView-ITCH 5.0](https://nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHspecification.pdf): message types and field layouts
+- [MoldUDP64](https://m.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/moldudp64.pdf): packet framing, sequence numbers, heartbeats, and end of session
+
 ## Roadmap
 
 - [ ] **Stage 0:** toolchain, CI, data decoding
