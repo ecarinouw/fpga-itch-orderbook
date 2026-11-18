@@ -69,10 +69,19 @@ pip install -r requirements.txt
 pytest tb/
 ```
 
-Market data is not included. Download a Nasdaq ITCH 5.0 sample file and point the scripts at it:
+## Market data
+
+Market data is not included in the repository. The project uses two full-day Nasdaq ITCH 5.0 sample files from Nasdaq's public server, [emi.nasdaq.com/ITCH/Nasdaq ITCH](https://emi.nasdaq.com/ITCH/Nasdaq%20ITCH):
+
+| File | Trading day | Size (compressed) | Used for |
+| --- | --- | --- | --- |
+| `12302019.NASDAQ_ITCH50.gz` | December 30, 2019 | 3.5 GB | Development and regression: a quiet holiday-week day, so replays are fast |
+| `S121225-v50.txt.gz` | December 12, 2025 | 12.6 GB | Stress testing: recent message rates, peak bursts, and peak live orders |
+
+Download them into `data/` (ignored by git) and read them compressed; there is no need to unzip them:
 
 ```bash
-python scripts/itch_stats.py path/to/sample.NASDAQ_ITCH50.gz
+python scripts/itch_stats.py data/12302019.NASDAQ_ITCH50.gz
 ```
 
 ## Roadmap
